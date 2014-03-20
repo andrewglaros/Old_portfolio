@@ -1,0 +1,71 @@
+nav{
+	position: relative;
+}
+
+header{
+	position: relative;
+	padding: 40px 15px 0 15px;
+	top: 0;
+}
+
+main{
+	margin-top: 100px;
+}
+
+h1{
+	font-size: 2.5em;
+	padding: 30px 0;
+}
+
+article p{
+	padding: 0 15px;
+}
+
+article.first{
+	padding-top: 60px;
+}
+
+article.last{
+	padding-bottom: 80px;
+}
+
+.bxwrapper{
+	padding: 0 15px;
+}
+
+#info .bg{
+	padding-top: 0;
+}
+
+#info h2{
+	text-align: center;
+}
+
+.row{
+	padding-bottom: 60px;
+}
+
+.col-8, .col-4{
+	max-width: none;
+	width: 100%;
+}
+
+#info p, #social{
+	padding: 0 15px 30px 15px;
+}
+
+#email{
+	text-align: center;
+}
+
+#social li{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+#social li a{
+	display: inline-block;
+	float: none;
+	margin: 0;
+}

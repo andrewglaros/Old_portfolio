@@ -1,7 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Glaros | UX UI Design Portfolio | San Francisco, CA</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- modernizr -->
+    <script src="js/modernizr.custom.26531.js"></script>
+  </head>
+
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <nav role="navigation">
+      <ul class="container">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#info">Info</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+      <h1 class="visually-hide">
+        Andrew Glaros UX and UI design portfolio
+      </h1>
+      <img src="images/banner.png" id="banner-img"/>
+    </header>
+
+    <main role="main">
+      <section id="projects" role="region">
+        <h1>Projects</h1>
+          <div class="bg">
+            <div class="container">
+              <article class="first" role="article">
+                <h2>Boston Public Library redesign</h2>
+                <p>As an exercise, I redesigned <a href="http://www.bpl.org" target="_blank">www.bpl.org</a>. I wrote the code, created a responsive design, and improved the information architecture.</p>
+                <ul class="bxslider">
+                  <li><img src="images/bpl-01.jpg" /></li>
+                  <li><img src="images/bpl-02.jpg" /></li>
+                  <li><img src="images/bpl-03.jpg" /></li>
+                  <li><img src="images/bpl-04.jpg" /></li>
+                  <li><img src="images/bpl-05.jpg" /></li>
+                  <li><img src="images/bpl-06.jpg" /></li>
+                </ul>
+              </article>
+
+              <article role="article">
+                <h2>Simple Timer</h2>
+                <p>I needed a simple exercise timer &mdash; so I built one. The five buttons in Simple Timer are common rest intervals for <a href="http://en.wikipedia.org/wiki/Anaerobic_exercise" target="_blank">anaerobic workouts</a>. Simple Timer adapts to any screen size.</p>
+                <ul class="bxslider">
+                  <li><img src="images/simple-timer-01.jpg" /></li>
+                  <li><img src="images/simple-timer-02.jpg" /></li>
+                  <li><img src="images/simple-timer-03.jpg" /></li>
+                </ul>
+              </article>
+              
+              <article role="article">
+                <h2>Unbiased</h2>
+                <p>Unbiased is a news app designed to encourage information gathering from multiple sources. The app provides two articles on one topic; sources are revealed when articles are read to completion.</p>
+                <ul class="bxslider">
+                  <li><img src="images/unbiased-01.jpg" /></li>
+                  <li><img src="images/unbiased-02.jpg" /></li>
+                  <li><img src="images/unbiased-03.jpg" /></li>
+                </ul>
+              </article>
+              
+              <article role="article" class="last">
+                <h2>LEED Online</h2>
+                <p>LEED Online is USGBC&rsquo;s web app that facilitates LEED project certification. I used USGBC&rsquo;s existing style guide to craft a new user experience.</p>
+                <ul class="bxslider">
+                  <li><img src="images/lo-01.jpg" /></li>
+                  <li><img src="images/lo-02.jpg" /></li>
+                </ul>
+              </article>
+              
+              <!--
+              <article class="last" role="article">
+                <h2>Process</h2>
+                <p>Description of project</p>
+                <ul class="bxslider">
+                  <li><img src="images/bpl-01.jpg" /></li>
+                  <li><img src="images/bpl-02.jpg" /></li>
+                </ul>
+              </article>
+              -->
+            </div><!-- container -->
+          </div><!-- bg -->
+      </section><!-- projects -->
+      
+      <section id="info" role="region">
+        <h1>Info</h1>
+        <div class="bg">
+          <div class="container">
+            <img src="images/andrew.jpg" id="andrew" />
+            <div class="row">
+              <div class="col-8">
+                <h2>About</h2>
+                <p>
+                  Hi, my name is Andrew Glaros. I love solving problems with smart solutions — especially when it benefits other people or the environment. Currently, I&rsquo;m a full-time UI designer at the <a href="http://www.usgbc.org" target="_blank">U.S. Green Building Council</a>. When I&rsquo;m not in front of a screen, you can find me <a href="http://www.soundcloud.com/glarglar" target="_blank">playing music</a>, exercising, gaming, or <a href="http://www.yelp.com/search?find_desc=taquerias+in+san+francisco" id="taco">scoping for the best taqueria in town</a>. Thanks for stopping by!
+                </p>
+              </div>
+              <div class="col-4">
+                <h2>Connect</h2>
+                <h3 class="visually-hide">Email</h3>
+                  <p id="email"><a href="mailto:andrew.glaros.design@gmail.com?Subject=Hello%20there">andrew.glaros.design@gmail.com</a></p>
+                <h3 class="visually-hide">Social</h3>
+                  <ul id="social">
+                    <li><a href="http://www.facebook.com/aglaros" target="_blank" id="facebook">facebook</a></li>
+                    <li><a href="http://www.linkedin.com/in/andrewglaros" target="_blank" id="linkedin">linkedin</a></li>
+                    <li><a href="https://github.com/andrewglaros" target="_blank" id="github">github</a></li>
+                  </ul>
+              </div>
+            </div><!-- row -->
+            <p id="copyright">© 2014 Andrew Glaros</p>
+          </div><!-- container -->
+        </div><!-- bg -->
+      </section><!-- info -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>We are often very ready to examine and test others, but first, and always first, we must examine and test ourselves.</p>
+      </div>
+    </footer>
+
   </body>
+
+  <script>
+    Modernizr.load([
+      { // always load jquery, bxslider, and custom script
+        load: ['http://code.jquery.com/jquery-1.11.0.min.js',
+          'http://code.jquery.com/jquery-migrate-1.2.1.min.js',
+          'js/jquery.bxslider.min.js',
+          'js/script.min.js'
+        ]
+      },
+      { // blur if filters are available, otherwise use opacity
+        test : Modernizr.cssfilters,
+        yep  : 'js/blur.min.js',
+        nope : 'js/fade.min.js'
+      },
+      { // apply extra styling to touch devices
+        test: Modernizr.touch,
+        yep : 'css/touch.css'
+      },
+      'analytics.min.js'
+    ]);
+  </script>
 </html>
