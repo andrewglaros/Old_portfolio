@@ -1,4 +1,4 @@
 andrewglaros.github.io
 ======================
 
-This repo is my portfolio website. Not much else to say. Check it out!
+This repo is my UX and UI portfolio website. Check it out!
