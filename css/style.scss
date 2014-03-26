@@ -144,6 +144,11 @@
             text-decoration: none;
         }
     }
+    nav{
+        .active{
+            background-color: $bright-color;
+        }
+    }
 
 /*  Header ============================*/
 
@@ -338,6 +343,34 @@
         }
     }
 
+    .no-rgba{
+        nav{
+            background-color: #000;
+        }
+    }
+
+    .no-rgba{
+        h1{
+            background-color: #EEE;
+        }
+    }
+
+    .no-rgba{
+        nav{
+            a:hover{
+                background-color: #00CCAC;
+            }
+        }
+    }
+
+    .no-rgba{
+        nav{
+            .active{
+                background-color: #00CCAC;
+            }
+        }
+    }
+    
 /*  Helper classes ==================================*/
 
     .inline{

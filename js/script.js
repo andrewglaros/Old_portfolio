@@ -1,7 +1,7 @@
  //swap yelp link with anchor
 $(document).ready(function(){
   $('.bxslider').bxSlider(),
-  $('#taco').attr('href','#andrew') 
+  $('#taco').attr('href','#andrew')
 });
 
 //smooth anchor scrolling
@@ -26,4 +26,26 @@ $(function() {
    $('#andrew').attr('src','images/andrew-taco.jpg');
    return false;
  });
+});
+
+//activate nav links based on scroll position
+$(function() {
+  $(window).scroll(function(){
+    var projects = $('#projects').offset().top - $(window).scrollTop();
+    var info = $('#info').offset().top - $(window).scrollTop();
+
+    if(projects <= 50 && info > 50){
+      $('#nav-projects').addClass('active');
+    }
+    else{
+      $('#nav-projects').removeClass('active');
+    };
+
+    if(info <= 50){
+      $('#nav-info').addClass('active');
+    }
+    else{
+      $('#nav-info').removeClass('active');
+    };
+  });
 });
