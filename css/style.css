@@ -34,13 +34,13 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3.6em;
+  font-size: 3.75em;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 
 h2 {
-  font-size: 2.8em;
+  font-size: 3em;
 }
 
 a, p {
@@ -223,7 +223,7 @@ img {
 
 #copyright {
   margin: 0;
-  padding-bottom: 40px;
+  padding: 40px 0 60px 0;
 }
 
 /*  Columns =========================================*/
@@ -247,7 +247,7 @@ img {
 
 /*  Footer ==========================================*/
 footer {
-  height: 80px;
+  height: 100px;
   clear: both;
   text-align: center;
   background-color: #000;
@@ -255,7 +255,7 @@ footer {
 
 footer p {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 /*  Modernizr ===========================================*/
